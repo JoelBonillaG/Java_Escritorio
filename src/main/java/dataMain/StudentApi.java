@@ -95,11 +95,6 @@ public class StudentApi {
             String json = this.gson.toJson(student);
 
             HttpClient client = HttpClient.newHttpClient();
-
-                   System.out.println("Actualizando estudiante:");
-        System.out.println("Cédula: " + student.getCardID());
-        System.out.println("Nombre: " + student.getName());
-        System.out.println("Apellido: " + student.getLastName());
            
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI(newUrl))
